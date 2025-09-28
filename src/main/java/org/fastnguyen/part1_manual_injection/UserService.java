@@ -1,4 +1,4 @@
-package org.fastnguyen.part1;
+package org.fastnguyen.part1_manual_injection;
 
 /**
  * @author PhatNguyen
