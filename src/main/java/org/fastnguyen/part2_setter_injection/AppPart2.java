@@ -5,7 +5,7 @@ package org.fastnguyen.part2_setter_injection;
  * @created 28/09/2025 - 15:35
  * @project dependency-injection-examples
  */
-public class AppSetter {
+public class AppPart2 {
 
   public static void main(String[] args) {
     PaymentService ps = new PaymentService();
