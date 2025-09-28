@@ -49,7 +49,7 @@ public class Injector {
           .orElse(null);
 
       T obj;
-      if (injectCtor != null) {
+      if (injectCtor != null && injectCtor.getParameterCount() > 0) {
         Object[] params = Arrays.stream(injectCtor.getParameterTypes())
             .map(this::getInstance)
             .toArray();
@@ -59,7 +59,7 @@ public class Injector {
         obj = clazz.getDeclaredConstructor().newInstance();
       }
 
-      // Put early instance
+      // Put early instance for cycles
       cache.put(clazz, obj);
 
       // 2️⃣ Field Injection
