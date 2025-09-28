@@ -1,0 +1,15 @@
+package org.fastnguyen.part1;
+
+/**
+ * @author PhatNguyen
+ * @created 28/09/2025 - 15:22
+ * @project dependency-injection-examples
+ */
+public class App {
+
+  public static void main(String[] args) {
+    EmailService emailService = new EmailService();   // create dependency
+    UserService userService = new UserService(emailService); // inject manually
+    userService.registerUser("Alice");
+  }
+}
