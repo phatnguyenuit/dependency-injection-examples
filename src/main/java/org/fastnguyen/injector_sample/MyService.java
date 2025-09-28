@@ -1,4 +1,4 @@
-package org.fastnguyen.stuffs;
+package org.fastnguyen.injector_sample;
 
 public class MyService {
 

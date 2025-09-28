@@ -1,4 +1,4 @@
-package org.fastnguyen.stuffs;
+package org.fastnguyen.injector_sample;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.InvocationTargetException;
