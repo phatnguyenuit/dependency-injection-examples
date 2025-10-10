@@ -5,9 +5,7 @@ import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.util.Arrays;
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 /**
  * @author PhatNguyen
@@ -17,7 +15,6 @@ import java.util.Set;
 public class Injector {
 
   private final Map<Class<?>, Object> cache = new HashMap<>();
-  private final Set<Class<?>> creationStack = new HashSet<>();
 
   // Public entrypoint
   public <T> T getInstance(Class<T> clazz) {
